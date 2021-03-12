@@ -24,7 +24,7 @@ int main()
       getline(reader,line); 
       int period = (unsigned)line.find(delimiter);
       if(period >= 0){
-        std::string token = (line.substr(period+1));
+        string token = (line.substr(period+1));
         if(basecolor.compare("red") == 0){
           if(token.compare("green") != 0 && token.compare("red") !=0 ){
             getline(reader, line); 
